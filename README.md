@@ -1,2 +1,2 @@
-# Samin
-I like to code stuff
+# My Reddit Bot
+Enjoy!
