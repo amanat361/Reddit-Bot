@@ -24,7 +24,7 @@ words_to_match = ['link me a good game', 'what is a good game', 'what\'s a good 
 cache = []
 
 def run_bot():
-      
+    
     print("Getting Subreddit...")
     subreddit = r.get_subreddit("pcmasterrace")
     
@@ -41,7 +41,7 @@ def run_bot():
             isRegex = False
         
         if comment.id not in cache and ( isMatch or isRegex ):
-            comment.reply("{} is a great game!\n\n -----  \n\n  This action was done automatically, if you have any questions or concerns, contact the creator: /u/amanat361".format(random.choice(steam_games)))     
+            comment.reply("{} is a great game! [Here are some other great games to check out.](http://store.steampowered.com/curator/4771848-r-pcmasterrace-Group/)\n\n -----  \n\n  This action was done automatically, if you have any questions or concerns, contact the creator: /u/amanat361".format(random.choice(steam_games)))     
             
             print("Mission Accomplished")
         
